@@ -3,8 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const authRoutes = require('./routes/authroutes');
-
+const path = require('path');
 
 // Initialize environment variables
 dotenv.config();
@@ -12,9 +11,12 @@ dotenv.config();
 // Initialize the app
 const app = express();
 
+// Serve static files (for Google verification, etc.)
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Middleware
-app.use(cors()); // Enable CORS for all routes
-app.use(express.json()); // Parse incoming JSON requests
+app.use(cors());
+app.use(express.json());
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
@@ -25,8 +27,11 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch((err) => console.error('MongoDB Connection Error:', err));
 
 // Routes
-app.use('/api/auth', require('./routes/authroutes'));  // Auth routes
-app.use('/api/reception', require('./routes/receptionRoutes')); // Reception routes
+const authRoutes = require('./routes/authroutes');
+app.use('/auth', authRoutes);
+
+const receptionRoutes = require('./routes/receptionRoutes');
+app.use('/api/reception', receptionRoutes);
 
 // Default route
 app.get('/', (req, res) => {
