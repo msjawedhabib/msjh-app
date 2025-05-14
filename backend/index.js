@@ -3,6 +3,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const authRoutes = require('./routes/authroutes');
+
 
 // Initialize environment variables
 dotenv.config();
@@ -23,7 +25,7 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch((err) => console.error('MongoDB Connection Error:', err));
 
 // Routes
-app.use('/api/auth', require('./routes/authRoutes'));  // Auth routes
+app.use('/api/auth', require('./routes/authroutes'));  // Auth routes
 app.use('/api/reception', require('./routes/receptionRoutes')); // Reception routes
 
 // Default route
