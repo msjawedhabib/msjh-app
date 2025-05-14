@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: "Poppins", sans-serif; /* Stylish font */
+}
+
+/* White Box Sections */
+.section {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Adds spacing between each element */
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px; /* Adds space between label and input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Dropdown */
+.branch-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.branch-dropdown:hover {
+    background-color: yellow;
+}
+
+.branch-dropdown:focus {
+    background-color: green;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button:active {
+    background-color: red;
+}
+
+/* Check-in & Check-out Buttons */
+.checkin-btn {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkin-btn.active {
+    background-color: lightgreen;
+}
+
+.checkout-btn {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn.active {
+    background-color: lightcoral; /* Light red */
+}
+
+/* Login & Logout */
+.login-btn {
+    background-color: gray;
+}
+
+.login-btn.active {
+    background-color: green;
+}
+
+.logout-btn {
+    background-color: gray;
+}
+
+.logout-btn.active {
+    background-color: red;
+}
+
+.logout-btn:focus {
+    background-color: purple;
+}
+
+/* Leave Button */
+.leave-btn:active {
+    background-color: orange;
+}
+
+/* Logout Navigation */
+.logout-navigate {
+    background-color: red;
+}
+/* Checkbox Container: Makes Checkboxes Appear in One Line */
+.checkbox-container {
+    display: flex; /* Aligns checkboxes in one row */
+    gap: 15px; /* Adds spacing between checkboxes */
+    flex-wrap: wrap; /* Wraps to next line if needed */
+}
+
+/* Checkbox Labels */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between checkbox and text */
+    font-size: 16px; /* Make text size readable */
+    font-weight: 500;
+}

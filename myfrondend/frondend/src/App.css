@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background-color: white;
+  padding: 20px 0;
+}
+
+/* Main Heading */
+.main-heading {
+  color: red;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+/* Subheading */
+.sub-heading {
+  color: blue;
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+/* Master Portal Heading */
+.master-heading {
+  color: red;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+/* Main Content */
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  padding: 10px 0;
+}
+
+.footer-text {
+  color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+}

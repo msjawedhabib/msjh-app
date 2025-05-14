@@ -1,0 +1,103 @@
+.portal-header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+.portal-content {
+  padding: 20px;
+}
+
+.container-box {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.manage-btn {
+  background-color: #007bff; /* Default Blue */
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.manage-btn:hover {
+  background-color: #ff9800; /* Hover Orange */
+}
+
+.manage-btn:active {
+  background-color: #008000; /* Active Pressed Green */
+}
+
+.search-btn {
+  background-color: #007bff; /* Blue */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accept-btn {
+  background-color: #008000; /* Green */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.change-btn {
+  background-color: #ff9800; /* Orange */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background-color: #ff0000; /* Red */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-section, .work-section {
+  margin-top: 10px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  background-color: #007bff; /* Blue Button */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.logout-btn {
+  display: block;
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}

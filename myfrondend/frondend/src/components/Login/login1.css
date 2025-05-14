@@ -1,0 +1,128 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fullscreen Background */
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, red, white); /* Red to white gradient */
+}
+
+/* Centered Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Ensures full viewport height */
+}
+
+/* Updated Login Box */
+.login-box {
+    background: white; /* Ensuring a pure white background */
+    padding: 50px;
+    width: 60%; /* Increased width for better spacing */
+    max-width: 550px; /* Adjusted to prevent excessive width */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds subtle shadow */
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.login-form input {
+    width: 100%;
+    padding: 14px; /* Increased padding for better input spacing */
+    margin: 12px 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Buttons */
+.login-btn, .forgot-btn {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Login Button Colors */
+.login-btn {
+    background-color: green;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: orange;
+}
+
+.login-btn:active {
+    background-color: red;
+}
+
+/* Forgot Button */
+.forgot-btn {
+    background-color: lightgrey;
+    color: black;
+}
+
+.forgot-btn:hover {
+    background-color: darkgrey;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .login-box {
+        width: 85%; /* Increased width for small screens */
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .login-form input {
+        padding: 12px;
+    }
+}
